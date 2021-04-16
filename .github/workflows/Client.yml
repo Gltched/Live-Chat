@@ -25,7 +25,6 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm i create-react-app
     - run: mkdir client
     - run: cd client/
     - run: create-react-app ./
